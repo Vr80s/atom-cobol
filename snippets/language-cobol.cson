@@ -1,0 +1,10 @@
+# If you want some example snippets, check out:
+# https://github.com/atom/language-gfm/blob/master/snippets/gfm.cson
+
+'.source.cobol':
+  'Method documentation':
+    'prefix': 'doc'
+    'body': '@@ ${1:method} - ${2:description}'
+  'Hello  COBOL':
+    'prefix': 'HELLO'
+    'body': 'Hello COBOL!'

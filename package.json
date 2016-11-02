@@ -1,0 +1,19 @@
+{
+  "name": "atom-cobol",
+  "version": "0.0.1",
+  "description": "COBOL language package",
+  "keywords": [
+    "cobol",
+    "COBOL",
+    "language",
+    "grammar"
+  ],
+  "repository": "https://github.com/Vr80s/atom-cobol.git",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+    "multi-wrap-guide": "*"
+  }
+}
