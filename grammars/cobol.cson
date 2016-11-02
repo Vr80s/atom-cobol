@@ -43,10 +43,10 @@
   #         'name': 'invalid.illegal.cobol'
   #   'match': '(^.{7})(\\d+\\s+.*\\b[^-])'
   # }
-  {
-    'match': '\\d+\\s+.*\\b[^-]'
-    'name': 'string.cobol'
-  }
+  # {
+  #   'match': '\\d+\\s+.*\\b[^-]'
+  #   'name': 'string.cobol'
+  # }
   # {
   #   'captures':
   #       '1':
@@ -55,16 +55,16 @@
   #         'name': 'invalid.illegal.cobol'
   #   'match': '(^.{72})(.*$)'
   # }
-  {
+  # {
     #'match': '\\b(?<!-)(?i:id\\s*division|identification\\s*division|identification|property-id|getter|setter|entry|function-id|attribute|interface-id|factory|ctl|class-control|options|environment\\s*division|environment-name|environment-value|environment|configuration\\s*section|configuration|decimal-point|call-convention|special-names|cursor\\s*is|update|picture\\s*symbol|currency\\s*sign|currency|repository|input-output\\s*section|input-output|file\\s*section|file-control|select|optional|i-o-control|data\\s*division|working-storage\\s*section|working-storage|section|local-storage|linkage\\s*section|linkage|communication|report|screen\\s*section|fd|rd|cd|sd|printing|procedure\\s*division|procedure|debugging|declaratives|security|based-storage|size|font|national-edited|national)\\b[^-]'
-    'match': '\\b(?<!-)(IDENTIFICATION\\s*DIVISION|ENVIRONMENT\\s*DIVISION|DATA\\s*DIVISION|PROCEDURE\\s*DIVISION\\s(.*)|PROCEDURE\\s*DIVISION\\s)\\b[^-]'
-    'name': 'entity.name.section'
-  }
-
-  {
-    'match': '(\\d+-\\S*\\b[^-]|\\d+-\\S*\\b)'
-    'name': 'entity.name.function.cobol'
-  }
+  #   'match': '\\b(?<!-)(IDENTIFICATION\\s*DIVISION|ENVIRONMENT\\s*DIVISION|DATA\\s*DIVISION|PROCEDURE\\s*DIVISION\\s(.*)|PROCEDURE\\s*DIVISION\\s)\\b[^-]'
+  #   'name': 'entity.name.section'
+  # }
+  #
+  # {
+  #   'match': '(\\d+-\\S*\\b[^-]|\\d+-\\S*\\b)'
+  #   'name': 'entity.name.function.cobol'
+  # }
 
 
 
@@ -89,30 +89,30 @@
   #   'match': '\\b(MOVE)\\b|\\bTO\\b|\\s*SET|\\s*DISPLAY'
   #   'name': 'keyword.control.cobol'
   # }
-  {
-    'match': '\\b(?i)(COPY)\\b'
-    'name': 'keyword.other.unit.cobol'
-  }
-  {
-    'match': '\\b(?i)(DISPLAY|MOVE|SET|GOBACK|)\\b'
-    'name': 'keyword.control.cobol'
-  }
-  {
-    'match': '(?<!\')'
-    'name': 'invalid.illegal.cobol'
-  }
-  {
-    begin: "(\\b(?i)IF\\b)"
-    end: "END-IF"
-    name: "string.quoted.cobol"
-    patterns: [
-      {
-        'match': '\\b(?i)(DISPLAY|MOVE|SET|GOBACK|)\\b'
-        'name': 'string.quoted.double.cobol'
-      }
-    ]
-
-  }
+  # {
+  #   'match': '\\b(?i)(COPY)\\b'
+  #   'name': 'keyword.other.unit.cobol'
+  # }
+  # {
+  #   'match': '\\b(?i)(DISPLAY|MOVE|SET|GOBACK|)\\b'
+  #   'name': 'keyword.control.cobol'
+  # }
+  # {
+  #   'match': '(?<!\')'
+  #   'name': 'invalid.illegal.cobol'
+  # }
+  # {
+  #   begin: "(\\b(?i)IF\\b)"
+  #   end: "END-IF"
+  #   name: "string.quoted.cobol"
+  #   patterns: [
+  #     {
+  #       'match': '\\b(?i)(DISPLAY|MOVE|SET|GOBACK|)\\b'
+  #       'name': 'string.quoted.double.cobol'
+  #     }
+  #   ]
+  #
+  # }
 
 
 
